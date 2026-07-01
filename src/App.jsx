@@ -13,7 +13,6 @@ const App = () => {
       <h1 className="text-center text-4xl font-extrabold mb-10 tracking-wider text-cyan-400">
         🎮 Game Zone 🎮
       </h1>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center">
         <Link to="/game/subway">
           <img
@@ -36,7 +35,6 @@ const App = () => {
             className="w-64 h-64 object-cover rounded-2xl border-4 border-red-400 shadow-[0_0_15px_#f87171] hover:scale-105 hover:border-red-300 transition-all duration-300"
           />
         </Link>
-
         <Link to="/game/ShiftHeads">
           <img
             src={ShiftHeads}
@@ -58,10 +56,18 @@ const App = () => {
             className="w-64 h-64 object-cover rounded-2xl border-4 border-gray-400 shadow-[0_0_15px_#94a3b8] hover:scale-105 hover:border-white transition-all duration-300"
           />
         </Link>
-
       </div>
-    </div>
 
+      <footer className="mt-16 text-center text-sm text-gray-400 tracking-wide">
+        Made with ❤️ by{' '}
+        
+          href="mailto:kiranrajpatil29@gmail.com"
+          className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
+        >
+          kiranrajpatil29@gmail.com
+        </a>
+      </footer>
+    </div>
   );
 };
 
